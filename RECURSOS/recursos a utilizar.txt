@@ -1,0 +1,14 @@
+Recursos a utilizar
+
+Editor de Código Notepad++ : http://notepad-plus-plus.org
+Editor de Código Sublime Text: http://www.sublimetext.com
+960 Grid System: http://960.gs
+CSS Gradient Generator: http://www.colorzilla.com/gradient-editor
+Normalize (Antes usabamos el Reseter CSS): http://necolas.github.io/normalize.css/3.0.1/normalize.css
+Slides.js: http://archive.slidesjs.com/
+Web Social Icons: http://www.iconspedia.com/pack/web-social-2021
+Google Fonts: http://www.google.com/webfonts
+FontSquirrel: http://www.fontsquirrel.com
+Lorem Ipsum Generator: http://es.lipsum.com
+
+Descarga la imagen de plantilla: http://www.falconmasters.com/demos/curso_webdesign/plantilla.jpg
