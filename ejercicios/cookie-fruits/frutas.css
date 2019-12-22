@@ -1,0 +1,45 @@
+/* 
+   CSS ejemplo cookie idioma
+   31 de enero de 2013
+   IAW 2º ASIR
+   IES Virgen del Carmen de Jaén
+*/
+
+body { 
+  background-color: #CCFF99; 
+  font-family: sans-serif; 
+  padding: 0 20px;
+}
+
+h1 { 
+  margin: 20px;
+  font-size: 150%;
+  text-align: center; 
+  text-transform: capitalize; 
+}
+
+address { 
+  clear: both;
+  border-top: black solid 1px; 
+  margin-top: 20px; 
+  padding-top: 5px; 
+}
+
+/* Tamaño de la imagen incluida en párrafo de la Clase bandera  */
+
+p.bandera img {
+  width: 200px;
+  height: 200px;  
+}
+
+/* Texto del mensaje */
+#mensaje {
+    font-size: 150%;
+    font-family: monospace; 
+	font-weight: bold;
+	color: #CC0000;
+}
+
+p.licencia { 
+  text-align: center; 
+}

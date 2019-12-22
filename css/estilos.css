@@ -139,7 +139,7 @@ header #subheader nav ul li a:hover {
 		-webkit-box-shadow:0px 2px 2px #000;
 }
 
-#bienvenidos article h3 {
+#bienvenidos article h3, #ejercicios h2 {
 	font-family:SourceSansPro-Light;
 	color:#fff;
 	font-size:40px;
