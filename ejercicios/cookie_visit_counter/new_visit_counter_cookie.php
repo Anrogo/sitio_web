@@ -1,3 +1,4 @@
+<?php ob_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,4 +64,5 @@ if(isset($_COOKIE['visitCount'])){
    
     echo "<p>Cookie visitCount does Not exists</p>";
 }
+ob_end_flush();
 ?>

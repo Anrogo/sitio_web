@@ -1,0 +1,19 @@
+/*CSS de ejercicio Autos DB*/
+body {
+  background-color: #99a7ce;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.mensaje_g {
+  color:green;
+}
+
+.mensaje_r {
+  color:red;
+}
+
+.container {
+  width:60%;
+  margin:auto;
+}

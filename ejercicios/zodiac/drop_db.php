@@ -1,0 +1,59 @@
+<?php
+/**
+ * ZODIAC SIGNS - drop_db.php
+ *
+ * IES Virgen del Carmen de Jaén
+ * Desarrollo Web en Entorno Servidor 2º DAW
+ *
+ * Basado en el código de:
+ *
+ * @author    Bartolomé Sintes Marco <bartolome.sintes+mclibre@gmail.com>
+ * @copyright 2012 Bartolomé Sintes Marco
+ * @license   http://www.gnu.org/licenses/agpl.txt AGPL 3 or later
+ * @version   2012-11-27
+ * @link      http://www.mclibre.org
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ob_start();
+
+session_name("zodiac");
+session_start();
+
+require_once "zodiac_functions.php";
+
+//si se encuentra conectado le permite realizar la orden de destruir la base de datos
+connected();
+
+cabecera("Drop DB", MENU_VOLVER);
+
+//echo "Complete el código para Borrar la <strong>base de datos <em>zodiaco</em></strong>";
+/*  
+   Complete el código  
+*/
+$pdo = new PDO("mysql:host=localhost", "id12020994_admin", "123456");////conectar con MySQL SIN SELECCIONAR LA BBDD para poder borrarla
+$dbname = "id12020994_zodiac";
+$borrar = "DROP DATABASE $dbname;";
+
+if($pdo->query($borrar)){
+    echo "<p class=\"mensaje_g\">SE HA ELIMINADO LA BASE DE DATOS $dbname.</p>\n";
+    $_SESSION['deleted'] = "confirm";//variable de sesión que permite saber en el resto de pag que la bd no existe ya
+    $_SESSION['drop_table'] = "confirm";//variable de sesión que permite saber en el resto de pag que la tabla no existe ya
+} else {
+    echo "<p class=\"mensaje_r\">NO SE HA PODIDO ELIMINAR LA BASE DE DATOS $dbname.</p>\n";
+}
+
+pie();
+
+?>
